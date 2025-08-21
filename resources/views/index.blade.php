@@ -24,16 +24,24 @@
 
 
         <nav class="bg-[#282828] text-[#ebdbb2] px-6 py-4 shadow-md flex items-center justify-between">
-            <div class="text-2xl font-bold text-[#fabd2f]">Gestión</div>
+            <div class="text-2xl font-bold text-[#fabd2f]">
+                <a href="/">
+                   Gestión
+                </a>
+            </div>
             <ul class="flex space-x-8">
                 <li>
-                    <a href="/persona" class="hover:text-[#fe8019] transition-colors">Personas</a>
+                    <a href="{{ route('persona.index') }}" class="hover:text-[#fe8019] transition-colors">Personas</a>
                 </li>
                 <li>
                     <a href="/producto" class="hover:text-[#fe8019] transition-colors">Productos</a>
                 </li>
                 <li>
                     <a  href="/venta" class="hover:text-[#fe8019] transition-colors">Ventas</a>
+                </li>
+
+                <li>
+                    <a  href="/registrar" class="hover:text-[#fe8019] transition-colors">Registrar</a>
                 </li>
             </ul>
         </nav>
