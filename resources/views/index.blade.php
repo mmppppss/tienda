@@ -22,68 +22,21 @@
 
     <body class="bg-[#282828] text-[#ebdbb2]">
 
-        <div class="flex horiziontal">
-            <form class="bg-[#3c3836] p-8 rounded-l shadow-md w-200 max-w-md space-y-6">
-                <h2 class="text-2xl font-bold text-center text-[#fabd2f]">Registrar Persona</h2>
 
-                <div>
-                    <label for="nombre" class="block mb-1">Nombre</label>
-                    <input
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        required
-                        class="w-full px-4 py-2 bg-[#282828] border border-[#504945] rounded text-[#ebdbb2] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fabd2f]"
-                        placeholder="Tu nombre"
-                    />
-                </div>
+        <nav class="bg-[#282828] text-[#ebdbb2] px-6 py-4 shadow-md flex items-center justify-between">
+            <div class="text-2xl font-bold text-[#fabd2f]">Gestión</div>
+            <ul class="flex space-x-8">
+                <li>
+                    <a href="/persona" class="hover:text-[#fe8019] transition-colors">Personas</a>
+                </li>
+                <li>
+                    <a href="/producto" class="hover:text-[#fe8019] transition-colors">Productos</a>
+                </li>
+                <li>
+                    <a  href="/venta" class="hover:text-[#fe8019] transition-colors">Ventas</a>
+                </li>
+            </ul>
+        </nav>
 
-                <div>
-                    <label for="ci" class="block mb-1">Cédula de Identidad</label>
-                    <input
-                        type="text"
-                        id="ci"
-                        name="ci"
-                        required
-                        class="w-full px-4 py-2 bg-[#282828] border border-[#504945] rounded text-[#ebdbb2] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fabd2f]"
-                        placeholder="Ej: 12345678"
-                    />
-                </div>
-
-                <div>
-                    <label for="telefono" class="block mb-1">Teléfono</label>
-                    <input
-                        type="tel"
-                        id="telefono"
-                        name="telefono"
-                        required
-                        class="w-full px-4 py-2 bg-[#282828] border border-[#504945] rounded text-[#ebdbb2] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fabd2f]"
-                        placeholder="Ej: 098123456"
-                    />
-                </div>
-
-                <div>
-                    <label for="email" class="block mb-1">Correo Electrónico</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        class="w-full px-4 py-2 bg-[#282828] border border-[#504945] rounded text-[#ebdbb2] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fabd2f]"
-                        placeholder="tu@email.com"
-                    />
-                </div>
-
-                <div>
-                    <button
-                        type="submit"
-                        class="w-full bg-[#fabd2f] text-[#282828] font-bold py-2 px-4 rounded hover:bg-[#d79921] transition"
-                    >
-                        Registrarse
-                    </button>
-                </div>
-            </form>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Tsunami_by_hokusai_19th_century.jpg" alt="kanagawa wave" class="object-cover w-100 rounded-r-lg">
-        </div> 
-    </body>
+</body>
 </html>
