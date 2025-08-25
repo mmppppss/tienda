@@ -16,3 +16,4 @@ Route::get('/persona2', function () {
 });
 
 Route::get('/persona', [PersonaController::class, 'index'])->name('persona.index');
+Route::get('/persona/create', [PersonaController::class, 'create'])->name('persona.create');

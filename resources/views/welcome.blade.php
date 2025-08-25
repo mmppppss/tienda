@@ -20,7 +20,7 @@
         @endif
     </head>
 
-    <body class="bg-[#282828] text-[#ebdbb2] flex items-center max-h-md">
+    <body class="bg-[#282828] text-[#ebdbb2] flex items-center max-h-m h-screen justify-center">
 
         <div class="flex horiziontal">
             <form class="bg-[#3c3836] p-8 rounded-l shadow-md w-200 max-w-md space-y-6">

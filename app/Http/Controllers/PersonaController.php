@@ -10,4 +10,8 @@ class PersonaController extends Controller
         $personas = \App\Models\Persona::all();
         return view('persona.index', compact('personas'));
     }
+    function create(){
+        $personas = \App\Models\Persona::all();
+        return view('persona.create', compact('personas'));
+    }
 }
