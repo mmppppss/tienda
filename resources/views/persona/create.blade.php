@@ -16,7 +16,8 @@
     <div class="flex flex-col items-center justify-center flex-grow py-10">
         <div class="flex flex-row shadow-lg rounded-lg overflow-hidden max-w-3xl w-full">
             <!-- Formulario -->
-            <form class="bg-[#3c3836] p-8 w-full sm:w-1/2 space-y-6">
+            <form class="bg-[#3c3836] p-8 w-full sm:w-1/2 space-y-6" action="{{ route('personas.store') }}" method="POST" >
+                @csrf
                 <h2 class="text-2xl font-bold text-center text-[#fabd2f]">Registrar Persona</h2>
 
                 <!-- Nombre -->
