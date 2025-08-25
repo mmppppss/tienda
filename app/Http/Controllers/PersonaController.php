@@ -29,7 +29,6 @@ class PersonaController extends Controller
 
         // Guardar en la base de datos
         Persona::create($validated);
-        $personas = \App\Models\Persona::all();
-        return view('personas.index', compact('personas'));
+        return redirect()->route('persona.index');
     }
 }
